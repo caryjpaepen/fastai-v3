@@ -11,7 +11,20 @@ from fastai.vision import *
 export_file_url = 'https://www.dropbox.com/s/v6cuuvddq73d1e0/export.pkl?raw=1'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['banksia',
+ 'corymbia',
+ 'cypress',
+ 'eucalyptus',
+ 'fig',
+ 'holly',
+ 'magnolia',
+ 'oak',
+ 'palm',
+ 'paperbark',
+ 'pine',
+ 'plane',
+ 'wattle',
+ 'willow']
 path = Path(__file__).parent
 
 app = Starlette()
