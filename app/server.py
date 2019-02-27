@@ -173,7 +173,7 @@ async def analyze(request):
     img_bytes = await (data['file'].read())
     img = open_image(BytesIO(img_bytes))
     prediction = learn.predict(img)[0]
-    breed = prediction.split("-")[-1]
+    breed = (str(prediction)).split("-")[-1]
     return JSONResponse({'result': breed})
 
 if __name__ == '__main__':
